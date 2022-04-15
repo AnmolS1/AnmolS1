@@ -2,44 +2,51 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Anmol Saxena</title>
         
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="./styles/main.css" />
 	</head>
 
 	<body>
-		<div class="topnav" id="navbar">
+		<div class="small-screen topnav attopbar" id="navbar">
 			<div id="navlinks">
 				<a href="index.html">
 					<img id="navlogo" src="./img/signature-w.png" />
 				</a>
-				<div id="non_home_navlinks">
-					<a href="#home">Home</a>
-					<a href="#about">About</a>
-					<a href="#portfolio">Portfolio</a>
-					<a href="#misc">Misc</a>
-					<a href="#contact">Contact</a>
-				</div>
-			</div>
-		</div>
-		
-		<div id="home">
-			<h1 id="empty_words"><div id="title-content">Anmol</div></h1>
-
-			<div id="carousel">
-				<div id="change_outer">
-					<div id="change_inner">
-						<div class="carousel_element">Cognitive Scientist</div>
-						<div class="carousel_element">Data Scientist</div>
-						<div class="carousel_element">ML/AI Engineer</div>
-						<div class="carousel_element">Back-End Developer</div>
+				<span style="cursor:pointer" id="open-menu-btn" onclick="openNav()">&#9776;</span>
+				<div class="overlay" id="overlay">
+					<div class="overlay-content" id="non-home-navlinks">
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+						<div id="menu-content">
+							<a href="#home">Home</a>
+							<a href="#about">About</a>
+							<a href="#portfolio">Portfolio</a>
+							<a href="#misc">Misc</a>
+							<a href="#contact">Contact</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
+		<div id="home">
+			<h1 id="empty-words"><div id="title-content">Anmol</div></h1>
+			
+			<div id="carousel">
+				<div id="change-outer">
+					<div id="change-inner">
+						<div class="carousel-element">Cognitive Scientist</div>
+						<div class="carousel-element">Data Scientist</div>
+						<div class="carousel-element">ML/AI Engineer</div>
+						<div class="carousel-element">Back-End Developer</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
 		<div id="about">
 			<h1>yeet</h1>
 		</div>

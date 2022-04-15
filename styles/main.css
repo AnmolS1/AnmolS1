@@ -3,53 +3,242 @@
 	--white: #FDFEFF;
 }
 
-html {
-	background-color: var(--bg);
-	color: var(--white);
+html, body {
+	margin: 0;
+	padding: 0;
 }
 
-body {
-	height: 100%;
-}
-
-/* ---------- NAVBAR ---------- */
+/* ---------- NAVBAR FOR PHONE ---------- */
 
 #navbar {
 	position: fixed;
 	top: 20px;
 	left: 15%;
+	
 	width: 70%;
-	height: 60px;
-
-	padding: 10px 20px;
-	background-color: rgba(191,191,191,0.75);
-}
-
-#navlogo {
-	height: 25px;
+	height: 7%;
+	
+	z-index: 1000;
 }
 
 #navlinks {
-	margin-top: calc((40px - 1.1em) / 4);
+	padding-bottom: 12px;
 }
 
-#navlinks a {
-	text-decoration: none;
-	font-size: 1.2em;
-	margin-right: 0;
+.attopbar {
+	background-color: rgba(191,191,191,0.75);
+	transition: background-color 0.2s;
 }
 
-#non_home_navlinks {
+.scrolledbar {
+	background-color: black;
+	transition: background-color 0.2s;
+}
+
+#navlogo {
+	position: relative;
+	height: 5vh;
+	top: 1vh;
+	left: 1vh;
+}
+
+#open-menu-btn {
 	float: right;
+	right: 1vh;
+	position: relative;
+	color: white;
+	font-size: 4.5vh;
 }
 
-#non_home_navlinks a:not(:first-child) {
-	margin-left: 30px;
+.overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0, 0.9);
+	overflow-x: hidden;
+	transition: 0.5s;
+}
+
+.overlay-content {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+#menu-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	position: relative;
+	height: calc(100% - 76px);
+	width: 100%;
+}
+
+.overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: #818181;
+	transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+	color: #f1f1f1;
+}
+
+.overlay .closebtn {
+	float: right;
+	font-size: 60px;
+	line-height: 60px;
+}
+
+/* ---------- HOMEPAGE FOR PHONE ---------- */
+
+#home {
+	background-image: url('../img/home_bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 20% 0;
+	height: 100vh;
+	top: 0;
+	color: var(--white);
+}
+
+#empty-words {
+	width: 50%;
+	top: 45%;
+	right: 5%;
+
+	font-size: 40px;
+	text-align: right;
+	position: absolute;
+	font-family: Verdana;
+}
+
+#carousel {
+	top: 55%;
+	right: 5%;
+	width: 100%;
+
+	position: relative;
+	text-align: right;
+	font-size: 30px;
+	line-height: 75px;
+	height: 75px;
+}
+
+#carousel #change-outer {
+	position: absolute;
+	top: 0;
+	text-align: right;
+	height: 75px;
+	width: 100%;
+	overflow: hidden;
+}
+
+#carousel #change-outer #change-inner {
+	position: relative;
+	-webkit-animation: rotate 8s ease-in-out infinite;
+	        animation: rotate 8s ease-in-out infinite;
+}
+
+#carousel #change_outer #carousel-element {
+	display: block;
+	font-weight: 700;
+	text-shadow: 2px 2px 2px #E57E22;
+}
+
+@-webkit-keyframes rotate {
+	0%, 20%  { transform: translateY(0); }
+	25%, 45% { transform: translateY(-75px); }
+	50%, 70% { transform: translateY(-150px); }
+	75%, 95% { transform: translateY(-225px); }
+	100%     { transform: translateY(-300px); }
+}
+
+@keyframes rotate {
+	0%, 20%  { transform: translateY(0); }
+	25%, 45% { transform: translateY(-75px); }
+	50%, 70% { transform: translateY(-150px); }
+	75%, 95% { transform: translateY(-225px); }
+	100%     { transform: translateY(-300px); }
+}
+
+
+
+/* ---------- STYLES FOR TABLET/LAPTOP ---------- */
+
+@media only screen and (min-width: 1024px) {
+	/* clearing styles */
+	.overlay { all: revert; }
+	.overlay a { all: revert; }
+	.overlay-content { all: revert; }
+	#menu-content { all: revert; }
+	#open-menu-btn { display: none; }
+	.overlay .closebtn { all: revert; display: none; }
+	.overlay a:hover, .overlay a:focus { all: revert; }
+
+	/* ---------- NAVBAR FOR TABLET/LAPTOP ---------- */
+
+	#navbar {
+		color: var(--white);
+
+		position: fixed;
+		top: 20px;
+		left: 15%;
+		width: 70%;
+		height: 7vh;
+
+		padding: 1vh 2vh;
+		z-index: 100;
+	}
+
+	.attopbar {
+		background-color: rgba(191,191,191,0.75);
+		transition: background-color 0.2s;
+	}
+
+	.scrolledbar {
+		background-color: black;
+		transition: background-color 0.2s;
+	}
+	
+	#navlinks {
+		top: 1vh;
+		height: 5vh;
+	}
+
+	#navlogo {
+		top: 0.5vh;
+		height: 4vh;
+	}
+
+	#menu-content a {
+		text-decoration: none;
+		font-size: 2.25vh;
+		margin-right: 0;
+	}
+
+	#menu-content a:not(:first-child) {
+		margin-left: 30px;
+	}
+
+	#overlay {
+		position: relative;
+		top: 0.6875vh;
+		float: right;
+	}
 }
 
 /* ---------- HOME ---------- */
 
-#home {
+/*#home {
+	color: var(--white);
+
 	height: 948px;
 	width: 100%;
 	background-image: url('../img/home_bg.jpg');
@@ -118,4 +307,9 @@ body {
 	50%, 70% { transform: translateY(-150px); }
 	75%, 95% { transform: translateY(-225px); }
 	100%     { transform: translateY(-300px); }
+}*/
+
+
+#about {
+	height: 5000px;
 }
