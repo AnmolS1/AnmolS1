@@ -6,6 +6,8 @@ $(document).on('scroll', function() {
 		$('#navbar').addClass('attopbar');
 		$('#navbar').removeClass('scrolledbar');
 	}
+
+	
 });
 
 function openNav() {

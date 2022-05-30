@@ -3,6 +3,8 @@
 	--white: #FDFEFF;
 }
 
+/* ---------- BASE STYLES ---------- */
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -11,6 +13,7 @@ html, body {
 /* ---------- NAVBAR FOR PHONE ---------- */
 
 #navbar {
+	min-width: 224px;
 	position: fixed;
 	top: 20px;
 	left: 15%;
@@ -23,6 +26,7 @@ html, body {
 
 #navlinks {
 	padding-bottom: 12px;
+	padding-left: 3vh;
 }
 
 .attopbar {
@@ -37,9 +41,8 @@ html, body {
 
 #navlogo {
 	position: relative;
-	height: 5vh;
-	top: 1vh;
-	left: 1vh;
+	height: 4vh;
+	top: 1.5vh;
 }
 
 #open-menu-btn {
@@ -168,8 +171,6 @@ html, body {
 	100%     { transform: translateY(-300px); }
 }
 
-
-
 /* ---------- STYLES FOR TABLET/LAPTOP ---------- */
 
 @media only screen and (min-width: 1024px) {
@@ -181,6 +182,14 @@ html, body {
 	#open-menu-btn { display: none; }
 	.overlay .closebtn { all: revert; display: none; }
 	.overlay a:hover, .overlay a:focus { all: revert; }
+
+	#carousel {
+		all: revert;
+	}
+	
+	#carousel #change-outer {
+		all: revert
+	}
 
 	/* ---------- NAVBAR FOR TABLET/LAPTOP ---------- */
 
@@ -210,11 +219,13 @@ html, body {
 	#navlinks {
 		top: 1vh;
 		height: 5vh;
+		padding-left: 0;
 	}
 
 	#navlogo {
 		top: 0.5vh;
 		height: 4vh;
+		left: 0;
 	}
 
 	#menu-content a {
@@ -232,83 +243,69 @@ html, body {
 		top: 0.6875vh;
 		float: right;
 	}
+
+	/* ---------- HOMEPAGE FOR TABLET/LAPTOP ---------- */
+	
+	#empty-words {
+		width: calc(50% - 5px);
+		top: 45%;
+		left: calc(50% + 5px);
+
+		font-size: 80px;
+		text-align: left;
+		position: absolute;
+		font-family: Verdana;
+	}
+
+	#carousel {
+		top: 60%;
+		left: 50%;
+		width: 50%;
+	
+		position: relative;
+		text-align: left;
+		font-size: 50px;
+		line-height: 75px;
+		height: 75px;
+	}
+	
+	#carousel #change-outer {
+		position: absolute;
+		top: 0;
+		left: 0;
+		text-align: left;
+		height: 75px;
+		overflow: hidden;
+	}
+	
+	#carousel #change-outer #change-inner {
+		position: relative;
+		-webkit-animation: rotate 8s ease-in-out infinite;
+				animation: rotate 8s ease-in-out infinite;
+	}
+	
+	#carousel #change-outer #carousel-element {
+		display: block;
+		font-weight: 700;
+		text-shadow: 2px 2px 2px #E57E22;
+	}
+
+	@-webkit-keyframes rotate {
+		0%, 20%  { transform: translateY(0); }
+		25%, 45% { transform: translateY(-75px); }
+		50%, 70% { transform: translateY(-150px); }
+		75%, 95% { transform: translateY(-225px); }
+		100%     { transform: translateY(-300px); }
+	}
+	
+	@keyframes rotate {
+		0%, 20%  { transform: translateY(0); }
+		25%, 45% { transform: translateY(-75px); }
+		50%, 70% { transform: translateY(-150px); }
+		75%, 95% { transform: translateY(-225px); }
+		100%     { transform: translateY(-300px); }
+	}
 }
-
-/* ---------- HOME ---------- */
-
-/*#home {
-	color: var(--white);
-
-	height: 948px;
-	width: 100%;
-	background-image: url('../img/home_bg.jpg');
-	background-size: cover;
-}
-
-#empty_words {
-	width: 50%;
-	top: 45%;
-	left: 50%;
-
-	font-size: 60px;
-	position: absolute;
-	font-family: Verdana;
-}
-
-#title-content {
-	position: absolute;
-	left: 12%;
-}
-
-#carousel {
-	top: 55%;
-	left: 50%;
-	width: 50%;
-
-	position: relative;
-	text-align: center;
-	font-size: 50px;
-	line-height: 75px;
-	height: 75px;
-}
-
-#carousel #change_outer {
-	position: absolute;
-	top: 0;
-	left: 12%;
-	text-align: left;
-	height: 75px;
-	overflow: hidden;
-}
-
-#carousel #change_outer #change_inner {
-	position: relative;
-	-webkit-animation: rotate 8s ease-in-out infinite;
-	        animation: rotate 8s ease-in-out infinite;
-}
-
-#carousel #change_outer #carousel_element {
-	display: block;
-	font-weight: 700;
-	text-shadow: 2px 2px 2px #E57E22;
-}
-
-@-webkit-keyframes rotate {
-	0%, 20%  { transform: translateY(0); }
-	25%, 45% { transform: translateY(-75px); }
-	50%, 70% { transform: translateY(-150px); }
-	75%, 95% { transform: translateY(-225px); }
-	100%     { transform: translateY(-300px); }
-}
-
-@keyframes rotate {
-	0%, 20%  { transform: translateY(0); }
-	25%, 45% { transform: translateY(-75px); }
-	50%, 70% { transform: translateY(-150px); }
-	75%, 95% { transform: translateY(-225px); }
-	100%     { transform: translateY(-300px); }
-}*/
-
 
 #about {
 	height: 5000px;
