@@ -1,4 +1,5 @@
 import React from "react";
+import emailjs from 'emailjs-com';
 import { useForm } from "react-hook-form";
 
 const Contact = () => {
@@ -9,8 +10,14 @@ const Contact = () => {
 	} = useForm();
 	
 	const onSubmit = (data, e) => {
-		e.target.reset();
-		console.log("Message submited: " + JSON.stringify(data));
+		e.preventDefault();
+		
+		emailjs.sendForm('gmail', 'anmolwebsitemailtemplate', e.target, 'YBm4_Zdo_8kauNW2Y').then((result) => {
+			e.target.reset();
+		}, (error) => {
+			console.log(error.text);
+		});
+		
 	};
 	
 	return (
@@ -20,7 +27,7 @@ const Contact = () => {
 				<ul>
 					<li>
 						<input
-							{...register("name", { required: true })}
+							{...register("user_name", { required: true })}
 							type="text"
 							placeholder="Name"
 						/>
@@ -33,7 +40,7 @@ const Contact = () => {
 					<li>
 						<input
 							{...register(
-								"email",
+								"user_email",
 								{
 									required: "Email is Required",
 									pattern: {
@@ -52,7 +59,7 @@ const Contact = () => {
 					
 					<li>
 						<textarea
-							{...register("subject", { required: true })}
+							{...register("message", { required: true })}
 							placeholder="Message"
 						></textarea>
 						{errors.subject && <span>Subject is required.</span>}
