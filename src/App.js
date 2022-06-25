@@ -9,7 +9,7 @@ const App = () => {
 		AOS.init();
 	}, []);
 	return (
-		<div className="home-four">
+		<div className="home">
 			<ScrollToTop />
 			<Routes />
 		</div>

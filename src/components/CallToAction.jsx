@@ -46,7 +46,7 @@ const CallToAction = () => {
 						data-aos-delay="100"
 					>
 						<button className="white-fill-bg" onClick={toggleModalOne}>
-							Make an enquiry
+							Connect with me
 						</button>
 					</div>
 				</div>

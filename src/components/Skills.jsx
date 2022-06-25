@@ -1,6 +1,6 @@
 import React from "react";
 
-const SkillsTwo = () => {
+const Skills = () => {
   return (
     <>
       <div className="tm_section">
@@ -13,13 +13,12 @@ const SkillsTwo = () => {
                 data-aos-duration="1200"
               >
                 <div className="tm_title">
-                  <h3>I have high skills in developing and programming</h3>
+                  <h3>I have skills in development and research</h3>
                 </div>
                 <div className="text">
                   <p>
-                    I am working on a professional, visually sophisticated and
-                    technologically proficient, responsive and multi-functional
-                    personal portfolio template Shane.
+                    My skillset is both broad and in-depth. Though what is shown formulates my primary skillset,
+					I am well-versed in far more fields as well as within each of these.
                   </p>
                 </div>
               </div>
@@ -33,7 +32,23 @@ const SkillsTwo = () => {
                 <div className="tokyo_progress">
                   <div className="progress_inner">
                     <span>
-                      <span className="label">Web Development</span>
+                      <span className="label">Cognitive Science</span>
+                      <span className="number">99%</span>
+                    </span>
+                    <div className="background">
+                      <div className="bar">
+                        <div
+                          className="bar_in"
+                          style={{ width: 99 + "%" }}
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* End .progress_inner */}
+
+                  <div className="progress_inner">
+                    <span>
+                      <span className="label">Machine Learning</span>
                       <span className="number">95%</span>
                     </span>
                     <div className="background">
@@ -49,7 +64,7 @@ const SkillsTwo = () => {
 
                   <div className="progress_inner">
                     <span>
-                      <span className="label">Brand Identity</span>
+                      <span className="label">Research</span>
                       <span className="number">80%</span>
                     </span>
                     <div className="background">
@@ -57,22 +72,6 @@ const SkillsTwo = () => {
                         <div
                           className="bar_in"
                           style={{ width: 80 + "%" }}
-                        ></div>
-                      </div>
-                    </div>
-                  </div>
-                  {/* End .progress_inner */}
-
-                  <div className="progress_inner">
-                    <span>
-                      <span className="label">Logo Design</span>
-                      <span className="number">90%</span>
-                    </span>
-                    <div className="background">
-                      <div className="bar">
-                        <div
-                          className="bar_in"
-                          style={{ width: 90 + "%" }}
                         ></div>
                       </div>
                     </div>
@@ -90,4 +89,4 @@ const SkillsTwo = () => {
   );
 };
 
-export default SkillsTwo;
+export default Skills;

@@ -3,116 +3,107 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import SimpleReactLightbox from "simple-react-lightbox";
 import { SRLWrapper } from "simple-react-lightbox";
 
-const tabList = ["All", "Design", "Branding", "Photography"];
+const tabList = ["All", "Research", "Projects", "Cool Stuff"];
 
 const tabListContent = [
   {
     porftoliItems: [
       {
-        img: "1",
-        title: " My Story",
-        meta: "Design",
-        portfolioLink: "https://www.instagram.com/",
+        img: "ml",
+        title: "SpamTraining",
+        meta: "Research",
+        portfolioLink: "https://github.com/AnmolS1/SpamTraining",
         delayAnimation: "0",
       },
       {
-        img: "2",
-        title: "Design Trend",
-        meta: "Branding",
-        portfolioLink:
-          "https://dribbble.com/shots/16545341-Imroz-Vue-JS-Creative-Agency-Portfolio-Template",
+        img: "study",
+        title: "SpamStudy",
+        meta: "Research",
+        portfolioLink: "https://github.com/AnmolS1/SpamStudy",
         delayAnimation: "100",
       },
       {
-        img: "14",
-        title: "Soft Cream",
-        meta: "Photography",
-        portfolioLink:
-          "https://dribbble.com/shots/16529407-Deski-Saas-Software-React-Template",
+        img: "notion",
+        title: "NotionExt",
+        meta: "Projects",
+        portfolioLink: "https://github.com/AnmolS1/NotionExt",
         delayAnimation: "200",
       },
       {
-        img: "22",
-        title: "Shane Design",
-        meta: "Design",
-        portfolioLink:
-          "https://dribbble.com/shots/16529282-Shane-Personal-Portfolio-React-Template",
+        img: "college",
+        title: "PreReq",
+        meta: "Projects",
+        portfolioLink: "https://github.com/AnmolS1/PreReq",
         delayAnimation: "0",
       },
       {
-        img: "7",
-        title: " Sweet Cherry",
-        meta: "Photography",
-        portfolioLink:
-          "https://dribbble.com/shots/16529226-Krozo-Personal-Portfolio-React-Template",
+        img: "audio",
+        title: "AudioVisualizer",
+        meta: "Cool Stuff",
+        portfolioLink: "https://github.com/AnmolS1/audio_visualizer",
         delayAnimation: "100",
       },
       {
-        img: "3",
-        title: "Behance Shoot",
-        meta: "Branding",
-        portfolioLink: "https://www.behance.net/ib-themes",
+        img: "parking",
+        title: "ParkingSystem",
+        meta: "Cool Stuff",
+        portfolioLink: "https://github.com/AnmolS1/ParkingSystem",
         delayAnimation: "200",
       },
     ],
   },
   {
     porftoliItems: [
-      {
-        img: "22",
-        title: "Shane Design",
-        meta: "Design",
-        portfolioLink:
-          "https://dribbble.com/shots/16529282-Shane-Personal-Portfolio-React-Template",
-        delayAnimation: "0",
-      },
-      {
-        img: "7",
-        title: " Sweet Cherry",
-        meta: "Photography",
-        portfolioLink:
-          "https://dribbble.com/shots/16529226-Krozo-Personal-Portfolio-React-Template",
-        delayAnimation: "100",
-      },
+		{
+			img: "ml",
+			title: "SpamTraining",
+			meta: "Research",
+			portfolioLink: "https://github.com/AnmolS1/SpamTraining",
+			delayAnimation: "0",
+		  },
+		  {
+			img: "study",
+			title: "SpamStudy",
+			meta: "Research",
+			portfolioLink: "https://github.com/AnmolS1/SpamStudy",
+			delayAnimation: "100",
+		  }
     ],
   },
   {
     porftoliItems: [
-      {
-        img: "1",
-        title: " My Story",
-        meta: "Design",
-        portfolioLink: "https://www.instagram.com/",
-        delayAnimation: "0",
-      },
-      {
-        img: "2",
-        title: "Design Trend",
-        meta: "Branding",
-        portfolioLink:
-          "https://dribbble.com/shots/16545341-Imroz-Vue-JS-Creative-Agency-Portfolio-Template",
-        delayAnimation: "100",
-      },
+		{
+			img: "notion",
+			title: "NotionExt",
+			meta: "Projects",
+			portfolioLink: "https://github.com/AnmolS1/NotionExt",
+			delayAnimation: "200",
+		  },
+		  {
+			img: "college",
+			title: "PreReq",
+			meta: "Projects",
+			portfolioLink: "https://github.com/AnmolS1/PreReq",
+			delayAnimation: "0",
+		  }
     ],
   },
   {
     porftoliItems: [
-      {
-        img: "7",
-        title: " Sweet Cherry",
-        meta: "Photography",
-        portfolioLink:
-          "https://dribbble.com/shots/16529226-Krozo-Personal-Portfolio-React-Template",
-        delayAnimation: "0",
-      },
-      {
-        img: "15",
-        title: "Soft Cream",
-        meta: "Photography",
-        portfolioLink:
-          "https://dribbble.com/shots/16529407-Deski-Saas-Software-React-Template",
-        delayAnimation: "100",
-      },
+		{
+			img: "audio",
+			title: "AudioVisualizer",
+			meta: "Cool Stuff",
+			portfolioLink: "https://github.com/AnmolS1/audio_visualizer",
+			delayAnimation: "100",
+		  },
+		  {
+			img: "parking",
+			title: "ParkingSystem",
+			meta: "Cool Stuff",
+			portfolioLink: "https://github.com/AnmolS1/ParkingSystem",
+			delayAnimation: "200",
+		  }
     ],
   },
 ];
@@ -128,7 +119,6 @@ const Portfolio = () => {
                 <div className="title_flex">
                   <div className="left">
                     <span>Portfolio</span>
-                    <h3>Creative Portfolio</h3>
                   </div>
                 </div>
               </div>
