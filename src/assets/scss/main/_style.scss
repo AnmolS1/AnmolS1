@@ -1345,9 +1345,9 @@ ul.react-tabs__tab-list {
   color: #767676;
   font-style: italic;
 }
-.tm_news .news_list ul li .details .date a {
+.tm_news .news_list ul li .details .title a {
   text-decoration: none;
-  color: #767676;
+  color: #000;
 
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -1355,8 +1355,8 @@ ul.react-tabs__tab-list {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.tm_news .news_list ul li .details .date a:hover {
-  color: #000;
+.tm_news .news_list ul li .details .title a:hover {
+  color: #767676;
 }
 .tm_news .news_list ul li .details .date span {
   position: relative;
@@ -1461,9 +1461,9 @@ body.modal {
   color: #767676;
   font-style: italic;
 }
-.tm_modalbox_news .date a {
+.tm_modalbox_news .title a {
   text-decoration: none;
-  color: #767676;
+  color: #000;
 
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -1471,7 +1471,7 @@ body.modal {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.tm_modalbox_news .date a:hover {
+.tm_modalbox_news .title a:hover {
   color: #e54b4b;
 }
 .tm_modalbox_news .date span {

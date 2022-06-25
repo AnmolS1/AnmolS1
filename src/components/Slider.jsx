@@ -121,13 +121,6 @@ const Slider = () => {
 						</div>
 						{/* End title */}
 						
-						<div className="job_wrap">
-							<span className="job">
-								based in USA.
-								<span className="overlay_effect"></span>
-							</span>
-						</div>
-						{/* End designation */}
 						<a href="#portfolio" className="white-fill-bg btn-outline btn-medium">
 							SEE PORTFOLIO
 							<span className="overlay_effect"></span>

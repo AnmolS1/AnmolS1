@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-import Social from "./Social";
 
 Modal.setAppElement("#root");
 
@@ -39,7 +38,7 @@ const Misc = () => {
 											className="main"
 											style={{
 												backgroundImage: `url(${
-													process.env.PUBLIC_URL + "/img/news/4.jpg"
+													process.env.PUBLIC_URL + "/img/misc/1.jpg"
 												})`,
 											}}
 										></div>
@@ -47,11 +46,11 @@ const Misc = () => {
 									{/* End image */}
 									
 									<div className="details">
-										<h3 className="title" onClick={toggleModalOne}>
-											Developers watch out for these burnout symptoms
+										<h3 className="title">
+											<a href="https://doi.org/10.1002/adma.202200512">3D Printing of 'Organic Electronics'</a>
 										</h3>
 										<p className="date">
-											By <a href="#">Alex Watson</a> <span>20 May 2020</span>
+											By Omid Dadras-Toussi, et al.{" "}<span>16 June 2022</span>
 										</p>
 									</div>
 									{/* End details */}
@@ -78,7 +77,7 @@ const Misc = () => {
 															className="main"
 															style={{
 																backgroundImage: `url(${
-																	process.env.PUBLIC_URL + "/img/news/4.jpg"
+																	process.env.PUBLIC_URL + "/img/misc/1.jpg"
 																})`,
 															}}
 														></div>
@@ -87,68 +86,31 @@ const Misc = () => {
 													
 													<div className="details">
 														<h3 className="title">
-															How to be appreciated for your hard work as a developer
+															<a href="https://doi.org/10.1002/adma.202200512">3D Printing of 'Organic Electronics'</a>
 														</h3>
 														<p className="date">
-															By <a href="#">Brook Kennedy</a>{" "}
-															<span>07 April 2020</span>
+															Omid Dadras-Toussi, et al.{" "}<span>16 June 2022</span>
 														</p>
 													</div>
 													{/* End details */}
 													
 													<div className="description">
 														<p>
-															As Vintage decided to have a closer look into
-															fast-paced New York web design realm in person, we
-															get to acquaint with most diverse and
-															exceptionally captivating personalities. As
-															Vintage decided to have a closer look into
-															fast-paced New York web design realm in person, we
-															get to acquaint with most diverse and
-															exceptionally captivating personalities. As
-															Vintage decided to have a closer look into
-															fast-paced New York web design realm in person, we
-															get to acquaint with most diverse and
-															exceptionally captivating personalities.
+															In this paper it is demonstrated that organic semiconductors
+															could be used in conjunction with 3D printing material in order
+															to produce an organic structure that conducts electricity 10
+															times better than without the semiconductors.
 														</p>
 														<blockquote>
-															As Vintage decided to have a closer look into
-															fast-paced New York web design realm in person. As
-															Vintage decided to have a closer look into
-															fast-paced New York web design realm in person, we
-															get to acquaint with most diverse and
-															exceptionally captivating personalities. As
-															Vintage decided to have a closer look into
-															fast-paced New York web design realm in person, we
-															get to acquaint with most diverse and
-															exceptionally captivating personalities.
+															We anticipate that the presented MPL-compatible OS
+															composite resins will pave the path toward production
+															of soft, bioactive, and conductive microstructures
+															for various applications in the emerging fields of
+															flexible bioelectronics/biosensors, nanoelectronics,
+															organ-on-chips, and immune cell therapies.
 														</blockquote>
-														<p>
-															As Vintage decided to have a closer look into
-															fast-paced New York web design realm in person, we
-															get to acquaint with most diverse and
-															exceptionally captivating personalities. We
-															encounter professionals with careers to covet and
-															lives to write books about. As Vintage decided to
-															have a closer look into fast-paced New York web
-															design realm in person, we get to acquaint with
-															most diverse and exceptionally captivating
-															personalities. As Vintage decided to have a closer
-															look into fast-paced New York web design realm in
-															person, we get to acquaint with most diverse and
-															exceptionally captivating personalities. As
-															Vintage decided to have a closer look into
-															fast-paced New York web design realm in person, we
-															get to acquaint with most diverse and
-															exceptionally captivating personalities.
-														</p>
 													</div>
 													{/* End description */}
-													<div className="news_share">
-														<Social />
-														{/* End social share */}
-													</div>
-													{/* End news share */}
 												</div>
 											</div>
 											{/* End box inner */}
@@ -168,7 +130,7 @@ const Misc = () => {
 											className="main"
 											style={{
 												backgroundImage: `url(${
-													process.env.PUBLIC_URL + "/img/news/9.jpg"
+													process.env.PUBLIC_URL + "/img/misc/2.jpg"
 												})`,
 											}}
 										></div>
@@ -177,10 +139,10 @@ const Misc = () => {
 									
 									<div className="details">
 										<h3 className="title" onClick={toggleModalTwo}>
-											How to be appreciated for your hard work as a developer
+											<a href="https://doi.org/10.3390/ijerph19106340">Virtual Training Can Reduce Psychosocial Stress & Anxiety</a>
 										</h3>
 										<p className="date">
-											By <a href="#">Brook Kennedy</a>{" "} <span>07 April 2020</span>
+											By Dalila Burin, et al.{" "} <span>23 May 2022</span>
 										</p>
 									</div>
 									{/* End details */}
@@ -207,7 +169,7 @@ const Misc = () => {
 															className="main"
 															style={{
 																backgroundImage: `url(${
-																	process.env.PUBLIC_URL + "/img/news/9.jpg"
+																	process.env.PUBLIC_URL + "/img/misc/2.jpg"
 																})`,
 															}}
 														></div>
@@ -216,68 +178,34 @@ const Misc = () => {
 													
 													<div className="details">
 														<h3 className="title">
-															How to be appreciated for your hard work as a developer
+															<a href="https://doi.org/10.3390/ijerph19106340">Virtual Training Can Reduce Psychosocial Stress & Anxiety</a>
 														</h3>
 														<p className="date">
-															By <a href="#">Brook Kennedy</a>{" "}
-															<span>07 April 2020</span>
+															By Dalila Burin, et al.{" "}<span>23 May 2022</span>
 														</p>
 													</div>
 													{/* End details */}
 													
 													<div className="description">
 														<p>
-															As Vintage decided to have a closer look into
-															fast-paced New York web design realm in person, we
-															get to acquaint with most diverse and
-															exceptionally captivating personalities. As
-															Vintage decided to have a closer look into
-															fast-paced New York web design realm in person, we
-															get to acquaint with most diverse and
-															exceptionally captivating personalities. As
-															Vintage decided to have a closer look into
-															fast-paced New York web design realm in person, we
-															get to acquaint with most diverse and
-															exceptionally captivating personalities.
+															As it turns out, using virtual reality can help to reduce
+															the psychosocial anxiety and stress that comes with the
+															assumed necessity of doing such training in person. This
+															article and study explores the ways in which virtual reality
+															can help the general populace in decreasing unnecessary
+															anxiety.
 														</p>
 														<blockquote>
-															As Vintage decided to have a closer look into
-															fast-paced New York web design realm in person. As
-															Vintage decided to have a closer look into
-															fast-paced New York web design realm in person, we
-															get to acquaint with most diverse and
-															exceptionally captivating personalities. As
-															Vintage decided to have a closer look into
-															fast-paced New York web design realm in person, we
-															get to acquaint with most diverse and
-															exceptionally captivating personalities.
+															IVR training can also promote positive acute benefits
+															at the neuroendocrine level (measured by sAA) and for
+															subjective anxiety (measured by the STAI-S), thereby
+															modulating the psychosocial stress response. Once again,
+															we confirmed the strength of the virtual illusion of
+															ownership and agency over the avatar, even under conditions
+															of visuo-motor asynchrony and motor intention discrepancy.
 														</blockquote>
-														<p>
-															As Vintage decided to have a closer look into
-															fast-paced New York web design realm in person, we
-															get to acquaint with most diverse and
-															exceptionally captivating personalities. We
-															encounter professionals with careers to covet and
-															lives to write books about. As Vintage decided to
-															have a closer look into fast-paced New York web
-															design realm in person, we get to acquaint with
-															most diverse and exceptionally captivating
-															personalities. As Vintage decided to have a closer
-															look into fast-paced New York web design realm in
-															person, we get to acquaint with most diverse and
-															exceptionally captivating personalities. As
-															Vintage decided to have a closer look into
-															fast-paced New York web design realm in person, we
-															get to acquaint with most diverse and
-															exceptionally captivating personalities.
-														</p>
 													</div>
 													{/* End description */}
-													<div className="news_share">
-														<Social />
-														{/* End social share */}
-													</div>
-													{/* End news share */}
 												</div>
 											</div>
 											{/* End box inner */}
@@ -297,7 +225,7 @@ const Misc = () => {
 											className="main"
 											style={{
 												backgroundImage: `url(${
-													process.env.PUBLIC_URL + "/img/news/8.jpg"
+													process.env.PUBLIC_URL + "/img/misc/3.jpg"
 												})`,
 											}}
 										></div>
@@ -306,10 +234,10 @@ const Misc = () => {
 									
 									<div className="details">
 										<h3 className="title" onClick={toggleModalThree}>
-											How designers and developers can collaborate better
+											<a href="https://github.com/AnmolS1/SpamTraining">Training Machine Learning Models On Spam Emails</a>
 										</h3>
 										<p className="date">
-											By <a href="#">Paola Atkins</a> <span>02 March 2020</span>
+											By Anmol Saxena
 										</p>
 									</div>
 									{/* END DETAILS */}
@@ -340,7 +268,7 @@ const Misc = () => {
 															className="main"
 															style={{
 																backgroundImage: `url(${
-																	process.env.PUBLIC_URL + "/img/news/8.jpg"
+																	process.env.PUBLIC_URL + "/img/misc/3.jpg"
 																})`,
 															}}
 														></div>
@@ -349,67 +277,23 @@ const Misc = () => {
 													
 													<div className="details">
 														<h3 className="title">
-															How to be appreciated for your hard work as a developer
+															<a href="https://github.com/AnmolS1/SpamTraining">Training Machine Learning Models On Spam Emails</a>
 														</h3>
 														<p className="date">
-															By <a href="#">Brook Kennedy</a>{" "}<span>07 April 2020</span>
+															By Anmol Saxena
 														</p>
 													</div>
 													{/* END DETAILS */}
 													
 													<div className="description">
 														<p>
-															As Vintage decided to have a closer look into
-															fast-paced New York web design realm in person, we
-															get to acquaint with most diverse and
-															exceptionally captivating personalities. As
-															Vintage decided to have a closer look into
-															fast-paced New York web design realm in person, we
-															get to acquaint with most diverse and
-															exceptionally captivating personalities. As
-															Vintage decided to have a closer look into
-															fast-paced New York web design realm in person, we
-															get to acquaint with most diverse and
-															exceptionally captivating personalities.
-														</p>
-														<blockquote>
-															As Vintage decided to have a closer look into
-															fast-paced New York web design realm in person. As
-															Vintage decided to have a closer look into
-															fast-paced New York web design realm in person, we
-															get to acquaint with most diverse and
-															exceptionally captivating personalities. As
-															Vintage decided to have a closer look into
-															fast-paced New York web design realm in person, we
-															get to acquaint with most diverse and
-															exceptionally captivating personalities.
-														</blockquote>
-														<p>
-															As Vintage decided to have a closer look into
-															fast-paced New York web design realm in person, we
-															get to acquaint with most diverse and
-															exceptionally captivating personalities. We
-															encounter professionals with careers to covet and
-															lives to write books about. As Vintage decided to
-															have a closer look into fast-paced New York web
-															design realm in person, we get to acquaint with
-															most diverse and exceptionally captivating
-															personalities. As Vintage decided to have a closer
-															look into fast-paced New York web design realm in
-															person, we get to acquaint with most diverse and
-															exceptionally captivating personalities. As
-															Vintage decided to have a closer look into
-															fast-paced New York web design realm in person, we
-															get to acquaint with most diverse and
-															exceptionally captivating personalities.
+															For this project, I am attempting to train multiple machine
+															learning models on a set of spam and non-spam emails with the
+															purpose of identifying whether any given email, normalized to
+															a series of data, is spam or not.
 														</p>
 													</div>
 													{/* END DESCRIPTION */}
-													
-													<div className="news_share">
-														<Social />
-														{/* END SOCIAL SHARE */}
-													</div>
 												</div>
 											</div>
 										</div>

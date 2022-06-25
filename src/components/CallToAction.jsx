@@ -19,7 +19,7 @@ const CallToAction = () => {
 				className="tm_talk bg_image_props"
 				style={{
 					backgroundImage: `url(${
-						process.env.PUBLIC_URL + "/img/callto-action/2.jpg"
+						process.env.PUBLIC_URL + "/img/callto-action/1.jpg"
 					})`,
 				}}
 			>
@@ -36,7 +36,7 @@ const CallToAction = () => {
 				
 				<div className="talk_inner">
 					<div className="text" data-aos="fade-up" data-aos-duration="1200">
-						<h3>Let's work together!</h3>
+						<h3>Send me an email!</h3>
 					</div>
 					
 					<div
@@ -46,7 +46,7 @@ const CallToAction = () => {
 						data-aos-delay="100"
 					>
 						<button className="white-fill-bg" onClick={toggleModalOne}>
-							Connect with me
+							Click Here
 						</button>
 					</div>
 				</div>
