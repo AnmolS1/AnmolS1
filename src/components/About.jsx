@@ -42,19 +42,35 @@ const About = () => {
 								data-aos-duration="1200"
 							>
 								<p>
-									I am a dedicated worker with the resume to back it up.
-									My work at iD Tech, teaching multiple classes per week,
-									is just one example of my commitment to consistently
-									improving in all areas. Currently, I am finishing up my
-									degree in Cognitive Science - Machine Learning and Neural
-									Computation at UCSD, a degree that will have taken only 2
-									years to complete. Alongside this, I worked as an
-									Instructional Apprentice at UCSD and a research assistant
-									at the Security and Cryptography lab at UCSD.
+									Immersed in the intricate world of technology and design,
+									my professional journey is a testament to unwavering
+									dedication and a love for pushing the boundaries of innovation.
 									<br></br>
-									My work is consistently high-quality and I will always
-									complete any task put in front of me. Currently, I am
-									looking for a job in ML/AI, especially with relation to NLP.
+									At iD Tech, I embraced the art of teaching, delivering
+									multiple classes weekly and consistently seeking avenues
+									for improvement. A recent graduate of UCSD, I expedited
+									my academic path, earning a degree in Cognitive Science,
+									specialized in Machine Learning and Neural Computation,
+									in just two years. Simultaneously, I thrived as an
+									Instructional Apprentice and SWE intern at UCSD's Security
+									and Cryptography lab.
+									<br></br>
+									Beyond formal education, my passion finds expression
+									in a spectrum of personal projects. Collaborating with
+									Dr. Imani Munyaka at UCSD, I delved into a groundbreaking
+									research project analyzing Gmail users' spam emails on
+									a large scale. I also engineered a comprehensive search
+									engine for all UCSD courses, developed tools to enhance
+									Notion interactions, and spearheaded a data science
+									capstone project utilizing FourSquare for location analytics.
+									<br></br>
+									My commitment to excellence extends to my current role
+									at IBM, where, as a federal technical consultant, I
+									channel my love for technology into crafting innovative
+									solutions for public issues. Through a blend of technical
+									skills and creative design, I navigate complex challenges
+									with unwavering dedication, ensuring the delivery of
+									consistently high-quality work.
 								</p>
 							</div>
 							<div
